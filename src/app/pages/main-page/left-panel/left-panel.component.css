@@ -1,0 +1,9 @@
+.outerContent {
+    background-color: white;
+    padding:10px;
+    margin-bottom: 10px;
+}
+.panelTitle {
+    font-weight: bold;
+    font-size: 20px;
+}

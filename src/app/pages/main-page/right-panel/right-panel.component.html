@@ -1,0 +1,13 @@
+<div *ngIf="!loading" >
+    <div class="outerContent" >
+      <span *ngFor="let item of cardArray">
+        <app-card [cardInfo]="item"></app-card>
+      </span>
+    </div>
+  <div *ngIf="!cardArray || !cardArray.length" class="emptyMsg">
+      No results found!
+  </div>
+</div>
+<div *ngIf="loading" class="emptyMsg">
+  Loading data...
+</div>

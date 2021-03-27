@@ -1,0 +1,24 @@
+.filterStyle {
+    padding: 5px;
+    margin: 10px auto;
+    width: 60px;
+    border-radius: 5px;
+    background-color: #7ccd3282;
+    border: none;
+}
+
+.btn-group {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.filterTitle {
+    margin: auto;
+    width: 140px;
+    text-align: center;
+    border-bottom: 1px solid #80808059;
+}
+.selected {
+    background-color: #8bc34a;
+    border: none;
+}

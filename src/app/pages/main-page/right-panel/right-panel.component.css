@@ -1,0 +1,36 @@
+
+@media screen and (min-width: 700px) {
+    .outerContent {
+        padding: 0px 10px;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1024px) { 
+    .outerContent {
+        padding: 0px 10px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1400px) { 
+    .outerContent {
+        padding: 0px 10px;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+
+.emptyMsg {
+    text-align: center;
+    font-size: 26px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.BGcolor {
+    
+}

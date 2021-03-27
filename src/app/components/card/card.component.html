@@ -1,0 +1,16 @@
+<div class="outerCard">
+  <div class="image">
+    <img src="{{cardInfo.links.mission_patch_small}}" height="200" width="150">
+  </div>
+  <div class="content">
+    <div class="navyBlue bold">{{cardInfo.mission_name}} #{{cardInfo.flight_number}}</div>
+    <div class="missionIds bold">Mission Ids:
+      <ul *ngFor="let item of cardInfo.mission_id">
+        <li class="navyBlue">{{item}}</li>
+      </ul>
+    </div>
+    <div><span class="bold">Launch year: </span><span class="navyBlue">{{cardInfo.launch_year}}</span></div>
+    <div class="grid"><span class="bold">Successfull Launch: </span><span class="navyBlue">{{cardInfo.launch_success}}</span></div>
+    <div class="grid"><span class="bold">Successfull Landing: </span><span class="navyBlue">{{successfullLanding}}</span></div>
+  </div>
+</div>

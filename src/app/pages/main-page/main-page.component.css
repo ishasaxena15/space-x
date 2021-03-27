@@ -1,0 +1,48 @@
+.content {
+    background-color: #8080802e;
+    padding: 10px;
+    min-height: 590px;
+}
+
+.headerStyle {
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.footerStyle {
+    text-align: center;
+    margin: 20px 0px;
+
+}
+.bold {
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 700px) {
+    .mainPage {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 1024px) { 
+    .mainPage {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1400px) { 
+    .mainPage {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 18% 82%;
+    }
+}
+    

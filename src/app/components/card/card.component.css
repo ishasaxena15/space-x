@@ -1,0 +1,46 @@
+.outerCard {
+    background-color: white;
+    margin-bottom: 10px !important;
+    min-height: 400px;
+}
+.image {
+    text-align: center;
+    background-color: #8080802e;
+    height: 200px;
+    border: 15px solid white;
+}
+.content {
+    padding: 15px;
+    padding-top: 0px;
+}
+.bold {
+    font-weight: bold;
+}
+.navyBlue {
+    color: #132a9ccc;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.content > div {
+    margin-bottom: 5px;
+}
+
+ul {
+    margin: 5px 0px 0px 0px;
+    font-weight: 100;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1024px) { 
+    .outerCard {
+        width: 230px;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1400px) { 
+    .outerCard {
+        width: 230px;
+    }
+}
+    

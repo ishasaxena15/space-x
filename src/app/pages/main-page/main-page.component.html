@@ -1,0 +1,8 @@
+<div class="content">
+    <div class="headerStyle">SpaceX Launch Programs</div>
+    <div class="mainPage">
+        <app-left-panel (setPatams)="setFilter($event)"></app-left-panel>
+        <app-right-panel [cardArray]="cardArray" [loading]="loading"></app-right-panel>
+    </div>
+    <div class="footerStyle"><span class="bold">Developed By: </span><span>Isha Saxena</span></div>
+</div>
