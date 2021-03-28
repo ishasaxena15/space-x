@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 export class MainPageComponent implements OnInit {
   public cardArray: SpaceXResponseType[];
   public getSpaceXParams: SpaceXParams = {
-    limit: 25,
+    limit: 100,
     launch_success: null,
     land_success: null,
     launch_year: null
