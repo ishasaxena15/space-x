@@ -1,4 +1,4 @@
 <div class="filterTitle">{{title}}</div>
 <div class="btn-group">
-  <button *ngFor="let item of list" class="filterStyle" [ngClass]="{'selected': item === selectedButton}" (click)="onSelect(item); selectedButton = item;">{{item}}</button>
+  <button *ngFor="let item of list" class="filterStyle" [ngClass]="{'selected': item === selectedButton}" (click)="onSelect(item);">{{item}}</button>
 </div>

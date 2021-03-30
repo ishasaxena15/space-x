@@ -1,5 +1,5 @@
 <div class="filterTitle">{{title}}</div>
 <div class="btn-group">
-  <button class="filterStyle" [ngClass]="{'selected': buttonActive}" (click)="onSelect(true); buttonActive = true">True</button>
-  <button class="filterStyle" [ngClass]="{'selected': buttonActive === false}" (click)="onSelect(false); buttonActive = false">Flase</button>
+  <button class="filterStyle" [ngClass]="{'selected': buttonActive === true }" (click)="onSelect(true);">True</button>
+  <button class="filterStyle" [ngClass]="{'selected': buttonActive === false}" (click)="onSelect(false);">Flase</button>
 </div>

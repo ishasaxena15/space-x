@@ -1,6 +1,6 @@
 <div class="outerContent">
   <div class="panelTitle">Filters</div>
-  <app-list-filter [title]="'Launch Year'" [startYear]="startYear" [endYear]="endYear" (onSelection)="getParams($event, 'launch_year')"></app-list-filter>
-  <app-toggle-filter [title]="'Successfull Launch'" (onSelection)="getParams($event, 'launch_success')"></app-toggle-filter>
-  <app-toggle-filter [title]="'Successfull Landing'" (onSelection)="getParams($event, 'land_success')"></app-toggle-filter>
+  <app-list-filter [title]="'Launch Year'" [startYear]="startYear" [endYear]="endYear" [key]="'launch_year'" (onSelection)="getParams($event, 'launch_year')"></app-list-filter>
+  <app-toggle-filter [title]="'Successfull Launch'" [key]="'launch_success'" (onSelection)="getParams($event, 'launch_success')"></app-toggle-filter>
+  <app-toggle-filter [title]="'Successfull Landing'" [key]="'land_success'" (onSelection)="getParams($event, 'land_success')"></app-toggle-filter>
 </div>

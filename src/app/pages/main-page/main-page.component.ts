@@ -11,10 +11,10 @@ import { Observable } from 'rxjs';
 export class MainPageComponent implements OnInit {
   public cardArray: SpaceXResponseType[];
   public getSpaceXParams: SpaceXParams = {
-    limit: 100,
-    launch_success: null,
-    land_success: null,
-    launch_year: null
+    limit: 4,
+    launch_success: localStorage.getItem('launch_success') ? JSON.parse(localStorage.getItem('launch_success')) : null,
+    land_success: localStorage.getItem('land_success') ? JSON.parse(localStorage.getItem('land_success')) : null,
+    launch_year: localStorage.getItem('launch_year') ? JSON.parse(localStorage.getItem('launch_year')) : null
   };
   public loading = false;
   constructor(
@@ -26,7 +26,13 @@ export class MainPageComponent implements OnInit {
   }
 
   public setFilter(filterOject) {
-    this.getSpaceXParams[Object.keys(filterOject)[0]] = filterOject[Object.keys(filterOject)[0]];
+    if(JSON.parse(localStorage.getItem(Object.keys(filterOject)[0])) === filterOject[Object.keys(filterOject)[0]]) {
+      localStorage.removeItem(Object.keys(filterOject)[0]);
+      delete this.getSpaceXParams[Object.keys(filterOject)[0]];
+    } else {
+      localStorage.setItem(Object.keys(filterOject)[0], filterOject[Object.keys(filterOject)[0]]);
+      this.getSpaceXParams[Object.keys(filterOject)[0]] = filterOject[Object.keys(filterOject)[0]];
+    }
     this.setCardData();
   }
 
